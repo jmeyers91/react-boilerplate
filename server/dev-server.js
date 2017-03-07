@@ -1,6 +1,6 @@
-const webpack = require("webpack");
-const WebpackDevServer = require("webpack-dev-server");
-const webpackConfig = require("../webpack.config");
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+const webpackConfig = require('../webpack.config');
 
 module.exports = (port) => {
   const server = new WebpackDevServer(webpack(webpackConfig));

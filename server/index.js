@@ -1,10 +1,10 @@
-const apiServer = require("./api-server");
-const devServer = require("./dev-server");
-const config = require("../config");
+const apiServer = require('./api-server');
+const devServer = require('./dev-server');
+const config = require('../config');
 
-const PORT = config.get("port");
-const PROXY_PORT = config.get("proxyPort");
-const PROD = process.env.NODE_ENV === "production";
+const PORT = config.get('port');
+const PROXY_PORT = config.get('proxyPort');
+const PROD = config.get('production');
 
 if(PROD) {
   apiServer(PORT);

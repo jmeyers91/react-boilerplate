@@ -1,14 +1,14 @@
-const electron = require("electron");
-const {appName, appId} = require("./package");
+const electron = require('electron');
+const {appName, appId} = require('./package');
 const {app, Menu, BrowserWindow, crashReporter} = electron;
 const width = 1024;
 const height = 768;
 
-app.on("window-all-closed", () => app.quit());
+app.on('window-all-closed', () => app.quit());
 
-app.on("ready", () => {
+app.on('ready', () => {
   const mainWindow = new BrowserWindow({
-    title: appName || "",
+    title: appName || '',
     minWidth: width,
     minHeight: height,
     center: true

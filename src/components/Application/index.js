@@ -1,11 +1,14 @@
-import {React, Component} from "component";
-import style from "./style.css";
+import React, { Component } from 'react';
+import style from './style.css';
+import TodoApp from 'components/TodoApp';
+import CounterApp from 'components/CounterApp';
 
 export default class Application extends Component {
   render() {
     return (
       <div className={style.root}>
-        This is my app
+        <TodoApp/>
+        <CounterApp/>
       </div>
     );
   }
